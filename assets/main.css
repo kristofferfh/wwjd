@@ -1,0 +1,57 @@
+:root {
+  --color-light-100: #fff;
+  --color-light-200: #e9e9e9;
+
+  --color-dark-100: #9d9d9d;
+  --color-dark-200: #6b6b6b;
+
+  --color-blue-100: #caf0f8;
+  --color-blue-200: #ade8f4;
+  --color-blue-300: #90e0ef;
+  --color-blue-400: #48cae4;
+  --color-blue-500: #00b4d8;
+  --color-blue-600: #0096c7;
+  --color-blue-700: #0077b6;
+  --color-blue-800: #023e8a;
+  --color-blue-900: #03045e;
+
+}
+
+:root {
+  --bg-primary: var(--color-blue-100);
+  --txt-primary: var(--color-blue-900);
+}
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --bg-primary: var(--color-dark-100);
+    --bg-txt-primary: var(--color-light-100);
+  }
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+
+
+  background-color: var(--bg-primary);
+  color: var(--txt-primary);
+}
+
+#__nuxt {
+  display: flex;
+  flex-flow: column nowrap;
+  min-height: 100svh;
+}
+
+main {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
