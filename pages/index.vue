@@ -8,7 +8,7 @@
   </div>
   <div id="output">
     <DialogueInput author="npc man" image="npc.jpg" message="hi there!"/>
-    <DialogueOutput />
+    <DialogueOutput message="hello my child!"/>
   </div>
 </template>
 <style scoped>
