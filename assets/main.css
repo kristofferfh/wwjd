@@ -20,6 +20,9 @@
 :root {
   --bg-primary: var(--color-blue-100);
   --txt-primary: var(--color-blue-900);
+
+  --bg-chat-input: var(--color-blue-200);
+  --bg-chat-output: var(--color-blue-300);
 }
 
 /* @media (prefers-color-scheme: dark) {
