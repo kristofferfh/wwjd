@@ -2,7 +2,7 @@
 
 </script>
 <template>
-  <NuxtImg src="jesusbeach.jpg" w/>
+  <NuxtImg src="jesusbeach.jpg" />
 </template>
 <style scoped>
 
