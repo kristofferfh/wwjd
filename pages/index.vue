@@ -7,10 +7,20 @@
     <ChatboxInput />
   </div>
   <div id="output">
-    <DialogueInput />
+    <DialogueInput author="npc man" image="npc.jpg" message="hi there!"/>
     <DialogueOutput />
   </div>
 </template>
 <style scoped>
+  #input {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 2rem;
+  }
 
+  #output {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 2rem;
+  }
 </style>
