@@ -1,4 +1,18 @@
 <script setup lang="ts">
+  const input = ref()
+  const output = ref()
+
+  onMounted(() => {
+    input.value = {
+      author: "npc man",
+      image: "npc.jpg",
+      message: "This is my question for you..."
+    }
+
+    output.value = {
+      message: "hello my child!"
+    }
+  })
 
 </script>
 <template>
@@ -7,8 +21,10 @@
     <ChatboxInput />
   </div>
   <div id="output">
-    <DialogueInput author="npc man" image="npc.jpg" message="hi there!"/>
-    <DialogueOutput message="hello my child!"/>
+    <TransitionGroup>
+      <DialogueInput v-if="input" v-bind="input"/>
+      <DialogueOutput v-if="output" v-bind="output"/>
+    </TransitionGroup>
   </div>
 </template>
 <style scoped>
