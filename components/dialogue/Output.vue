@@ -7,10 +7,10 @@
 </script>
 <template>
   <div>
-    <span id="message">
+    <span class="message">
       {{ message }}
     </span>
-    <span id="profile">
+    <span class="profile">
       <h3>Jesus</h3>
       <NuxtImg :src="jesusImg" />
     </span>
@@ -19,17 +19,20 @@
 <style scoped>
   div {
     display: flex;
+    gap: 1rem;
     width: 100%;
   }
 
-  #profile img {
+  .profile img {
     height: 200px;
     aspect-ratio: 1;
     border-radius: 9999px;
   }
 
-  #message {
+  .message {
     flex: 1;
-    background-color: var(--bg-chat-input);
+    padding: 1rem;
+    border-radius: 20px 0 20px 20px;
+    background-color: var(--bg-chat-output);
   }
 </style>
